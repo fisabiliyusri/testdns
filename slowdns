@@ -23,11 +23,11 @@ banner='
 |___/____\___/ \_/\_/ |___/|_|\_|___/'
 
 echo -e "${CORTITLE}▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬${SCOLOR}"
-echo -e "${CORTITLE}  CLIENTE SLOWDNS     ${SCOLOR}"
+echo -e "${CORTITLE}  CLIENT SLOWDNS     ${SCOLOR}"
 echo -e "${CORTITLE}▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬${SCOLOR}"
 echo -e "${RED}$banner${SCOLOR}"
 echo ""
-     echo -e "${YELLOW}[ 1 ] | INSTALAR SLOWDNS${SCOLOR}"
+     echo -e "${YELLOW}[ 1 ] | Install SLOWDNS${SCOLOR}"
      echo -e "${RED}▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬${SCOLOR}"
      echo -e "${YELLOW}[ 2 ] | SLOWDNS GOOGLE${SCOLOR}"
      echo -e "${YELLOW}[ 3 ] | SLOWDNS CLOUDFARE${SCOLOR}"
@@ -35,7 +35,7 @@ echo ""
      echo -e "${RED}▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬${SCOLOR}"
      echo -e "${YELLOW}[ 0 ] | SAIR${SCOLOR}"
     echo -e '\n'
-     echo -e "${GREEN}DIGITE O NUMERO E APERTE ENTER: ${SCOLOR}"
+     echo -e "${GREEN}ketik nomor dan tekan enter: ${SCOLOR}"
     read opcao
     case $opcao in
     1) Opcao1 ;;
@@ -43,7 +43,7 @@ echo ""
     3) Opcao3 ;;
     4) Opcao4 ;;
     0) Sair ;;
-    *) "Comando desconhecido" ; echo ; Menu;;
+    *) "unknown command" ; echo ; Menu;;
     esac
     }
 
@@ -52,29 +52,29 @@ clear
 if [ -e $arquivo ]; then
 
 echo -e "${CORTITLE}▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬${SCOLOR}"
-echo -e "${CORTITLE} SLOWDNS JÁ INSTALADO                    ${SCOLOR}"
-echo -e "${CORTITLE} DESLIGUE O WIFFI LIGUE OS DADOS MOVEIS  ${SCOLOR}"
-echo -e "${CORTITLE} APERTE ENTER  E ESCOLHA AS OPÇÕES       ${SCOLOR}"
-echo -e "${CORTITLE} DO DNS E DEPOIS LIGUE A VPN             ${SCOLOR}"
+echo -e "${CORTITLE} SLOWDNS ALREADY INSTALLED                    ${SCOLOR}"
+echo -e "${CORTITLE} MATIKAN WIFI AKTIFKAN DATA SELULER  ${SCOLOR}"
+echo -e "${CORTITLE} TEKAN ENTER DAN PILIH PILIHAN       ${SCOLOR}"
+echo -e "${CORTITLE} DARI DNS DAN AKTIFKAN VPN             ${SCOLOR}"
 echo -e "${CORTITLE}▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬${SCOLOR}"
 
 else
 clear
 echo -e "${GREEN}▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬${SCOLOR}"
-echo -e "${CORTITLE}INSTALANDO GIT... ${SCOLOR}"
+echo -e "${CORTITLE}INSTALL GIT... ${SCOLOR}"
 echo -e "${GREEN}▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬${SCOLOR}"
 pkg install git -y > /dev/null 2>&1
-echo -e "${CORTITLE}GIT INSTALADO${SCOLOR}"
+echo -e "${CORTITLE}GIT DIPASANG${SCOLOR}"
 echo -e "${GREEN}▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬${SCOLOR}"
-echo -e "${CORTITLE}BAIXANDO GO...${SCOLOR}"
+echo -e "${CORTITLE}INSTALL GOLANG...${SCOLOR}"
 echo -e "${GREEN}▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬${SCOLOR}"
-pkg install golang -y > /dev/null 2>&1
-echo -e "${CORTITLE}GO INSTALADO${SCOLOR}"
+apt install golang -y > /dev/null 2>&1
+echo -e "${CORTITLE}GOLANG DIPASANG${SCOLOR}"
 echo -e "${GREEN}▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬${SCOLOR}"
-echo -e "${CORTITLE}BAIXANDO DNSTT${SCOLOR}"
+echo -e "${CORTITLE}INSTALL DNSTT${SCOLOR}"
 echo -e "${GREEN}▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬${SCOLOR}"
 git clone https://www.bamsoftware.com/git/dnstt.git > /dev/null 2>&1
-echo -e "${CORTITLE}DNSTT INSTALADO${SCOLOR}"
+echo -e "${CORTITLE}DNSTT DIPASANG${SCOLOR}"
 echo -e "${GREEN}▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬${SCOLOR}"
 touch ~/dnstt/dnstt-client/dns
 echo "#!/bin/sh" >> ~/dnstt/dnstt-client/dns
@@ -109,21 +109,21 @@ rm ~/dnstt/dnstt-client > /dev/null 2>&1
 clear
 
 echo -e "${CORTITLE}=========================================${SCOLOR}"
-echo -e "${CORTITLE} SLOWDNS    INSTALADO                    ${SCOLOR}"
-echo -e "${CORTITLE} DESLIGUE O WIFFI LIGUE OS DADOS MOVEIS  ${SCOLOR}"
-echo -e "${CORTITLE} APERTE ENTER  E ESCOLHA AS OPÇÕES       ${SCOLOR}"
-echo -e "${CORTITLE} DO DNS E DEPOIS LIGUE A VPN             ${SCOLOR}"
+echo -e "${CORTITLE} SLOWDNS    DIPASANG                    ${SCOLOR}"
+echo -e "${CORTITLE} MATIKAN WIFI AKTIFKAN DATA SELULER  ${SCOLOR}"
+echo -e "${CORTITLE} TEKAN ENTER DAN PILIH PILIHAN       ${SCOLOR}"
+echo -e "${CORTITLE} DARI DNS DAN AKTIFKAN VPN             ${SCOLOR}"
 echo -e "${CORTITLE}=========================================${SCOLOR}"
 fi
 echo -e "${GREEN}=========================================${SCOLOR}"
-echo -e "${YELLOW} APERTE O ENTER PARA VOLTAR${SCOLOR}"
+echo -e "${YELLOW} TEKAN ENTER UNTUK KEMBALI${SCOLOR}"
 echo -e "${GREEN}=========================================${SCOLOR}"
    
     read opcao
     case 1 in
     1) Voltar ;;
     0) Sair ;;
-    *) "Comando desconhecido" ; echo ; Opcao1 ;;
+    *) "perintah tidak dikenal" ; echo ; Opcao1 ;;
     esac
 }
 
@@ -138,7 +138,7 @@ sh $HOME/dns1 &>/dev/null &
 |___/____\___/ \_/\_/ |___/|_|\_|___/'
 
 echo -e "${CORTITLE}=====================================${SCOLOR}"
-echo -e "${CORTITLE}        CLIENTE SLOWDNS INICIADO     ${SCOLOR}"
+echo -e "${CORTITLE}        KLIEN SLOWDNS DIMULAI     ${SCOLOR}"
 echo -e "${CORTITLE}=====================================${SCOLOR}"
 echo -e "${RED}$banner${SCOLOR}"
 echo ""
@@ -161,7 +161,7 @@ sh $HOME/dns2 &>/dev/null &
 |___/____\___/ \_/\_/ |___/|_|\_|___/'
 
 echo -e "${CORTITLE}=====================================${SCOLOR}"
-echo -e "${CORTITLE}        CLIENTE SLOWDNS INICIADO     ${SCOLOR}"
+echo -e "${CORTITLE}        KLIEN SLOWDNS DIMULAI     ${SCOLOR}"
 echo -e "${CORTITLE}=====================================${SCOLOR}"
 echo -e "${RED}$banner${SCOLOR}"
 echo ""
@@ -183,7 +183,7 @@ sh $HOME/dns3 &>/dev/null &
 |___/____\___/ \_/\_/ |___/|_|\_|___/'
 
 echo -e "${CORTITLE}=====================================${SCOLOR}"
-echo -e "${CORTITLE}        CLIENTE SLOWDNS INICIADO     ${SCOLOR}"
+echo -e "${CORTITLE}        KLIEN SLOWDNS DIMULAI    ${SCOLOR}"
 echo -e "${CORTITLE}=====================================${SCOLOR}"
 echo -e "${RED}$banner${SCOLOR}"
 echo ""
